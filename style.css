@@ -1,7 +1,5 @@
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 body {
@@ -28,9 +26,45 @@ div {
 }
 
 .main-container {
+    border: none;
+
     display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 12px;
+
     grid-column-start: 3;
     grid-column: span 8 / span 8;
     grid-row-start: 2;
     grid-row: span 7 / span 7;
+}
+
+.user-card {
+    grid-row: span 2 / span 2;
+}
+
+.user-outlay-graph {
+    grid-column: span 3 / span 3;
+    grid-row: span 3 / span 3;
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+.user-spending-analytics {
+    grid-row: span 4 / span 4;
+    grid-column-start: 4;
+    grid-row-start: 3;
+}
+
+.user-income-graph {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 1;
+    grid-row-start: 5;
+}
+
+.user-latest-transactions {
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 5;
 }
