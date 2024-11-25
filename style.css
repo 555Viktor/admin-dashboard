@@ -17,6 +17,7 @@ body {
     grid-template-rows: repeat(8, 1fr);
     gap: 12px;
 
+    color: var(--dark-mode-text);
     background: var(--dark-mode-body);
 }
 
@@ -77,14 +78,12 @@ div:not(.main-container) {
 }
 
 /* Sidebar styling */
-
 .sidebar-links-container {
     height: 80%;
 }
 
 .sidebar-logo h2 {
     text-align: center;
-    color: var(--dark-mode-text);
 }
 
 .sidebar-links-list {
@@ -101,7 +100,7 @@ ul.sidebar-links-list {
 
 .sidebar-links-list a {
     text-decoration: none;
-    color: var(--dark-mode-text);
+    color: inherit;
 }
 
 .sidebar-links-list i {
@@ -123,7 +122,16 @@ ul.sidebar-links-list {
     border-top: 1px solid;
 }
 
-.divisor {
-    border: 1px solid var(--dark-mode-body);
-    width: 80%;
+/* Navbar styling */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+}
+.nav-links-list {
+    list-style: none;
+    margin-inline: 2rem;
+    
+    display: flex;
+    gap: 1rem;
+    align-items: baseline;
 }
