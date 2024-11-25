@@ -91,13 +91,13 @@ div:not(.main-container) {
 }
 
 .sidebar-logo h2 {
+    padding-block: 1rem;
     text-align: center;
-    margin-bottom: 0;
 }
 
 .sidebar-links-list {
     height: 64%;
-    margin: 0;
+
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -117,8 +117,8 @@ ul.sidebar-links-list {
 }
 
 .sidebar-links-list li {
+    margin-inline: 1rem;
     padding-block: 0.5rem;
-    margin-block: 0.2rem;
     cursor: pointer;
 }
 
@@ -130,25 +130,21 @@ ul.sidebar-links-list {
 
 /* Navbar styling */
 .navbar-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-content: center;
+    place-items: center;
 }
 
-.navbar-container,
-.nav-links-container {
-    padding-inline: 2rem;
+.nav-greeting-wrap,
+.nav-links-wrap {
+    height: 100%;
+    width: 50%;
 }
 
 .nav-links-list {
-    list-style: none;
-
     display: grid;
     grid-template-columns: repeat(4, 40px);
-}
-
-.divisor {
-    border: 2px solid var(--dark-mode-body);
-    width: 88%;
-    margin-block: 0.6rem;
+    place-content: end;
+    list-style: none;
 }
