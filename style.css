@@ -5,15 +5,13 @@
 }
 
 @font-face {
-    font-family: 'Gilroy'; /* The name you want to reference the font by */
-    src: url('fonts/customfont.woff2') format('woff2'), /* The .woff2 file */
-         url('fonts/customfont.woff') format('woff'); /* The .woff file */
-    font-weight: normal; /* Adjust depending on the font weight (e.g., normal, bold) */
-    font-style: normal;  /* Adjust if the font has an italic variant */
+    font-family: 'Gilroy';
+    src: url('./fonts/Gilroy-Light.otf') format('opentype');
 }
 
 * {
     box-sizing: border-box;
+    font-family: "Gilroy", serif;
 }
 
 /* Grid page layout */
