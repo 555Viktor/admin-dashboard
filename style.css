@@ -112,3 +112,18 @@ ul.sidebar-links-list {
     padding-block: 0.5rem;
     margin-block: 0.2rem;
 }
+
+.sidebar-links-list li:hover {
+    background: var(--dark-mode-body);
+    border-top-left-radius: 0.8rem;
+    border-bottom-left-radius: 0.8rem;
+}
+
+.list-support {
+    border-top: 1px solid;
+}
+
+.divisor {
+    border: 1px solid var(--dark-mode-body);
+    width: 80%;
+}
