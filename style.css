@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+/* Grid page layout */
 body {
     min-height: 100vh;
 
@@ -9,6 +10,8 @@ body {
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(8, 1fr);
     gap: 12px;
+
+    background: #1D1E2C;
 }
 
 div {
@@ -68,3 +71,5 @@ div {
     grid-column-start: 3;
     grid-row-start: 5;
 }
+
+/* Page styling */
