@@ -117,7 +117,7 @@ ul.sidebar-links-list {
 }
 
 .sidebar-links-list li {
-    margin-inline: 1rem;
+    margin-inline-start: 1rem;
     padding-block: 0.5rem;
     cursor: pointer;
 }
@@ -134,6 +134,15 @@ ul.sidebar-links-list {
     grid-template-columns: repeat(2, 1fr);
     place-content: center;
     place-items: center;
+}
+
+.nav-greeting-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.nav-greeting-wrap img.user-profile-pic {
+    padding-right: 0.5rem;
 }
 
 .nav-greeting-wrap,
