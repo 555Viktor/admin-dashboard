@@ -161,6 +161,14 @@ ul.sidebar-links-list {
 }
 
 /* Main container styling */
+.span-profit {
+    color: var(--color-profit);
+}
+
+.span-loss {
+    color: var(--color-loss);
+}
+
 .dashboard-total-item {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -175,6 +183,8 @@ ul.sidebar-links-list {
 
     padding-top: 0.4rem;
     padding-inline: 0.8rem;
+
+    font-size: 1.1rem;
 }
 
 .component-total-result {
@@ -208,11 +218,14 @@ ul.sidebar-links-list {
     width: 100%;
 }
 
-.span-profit {
-    color: var(--color-profit);
+/* User  card component */
+.card-img-wrap {
+    height: 88%;
+
+    display: flex;
+    justify-content: center;
 }
 
-.span-loss {
-    color: var(--color-loss);
+.card-img-wrap img{
+    width: 92%;
 }
-
