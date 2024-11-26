@@ -2,6 +2,8 @@
     --dark-mode-body: #1D1E2C;
     --dark-mode-container: #24263A;
     --dark-mode-text: #DBDFEA;
+    --color-profit: #34E4B5;
+    --color-loss : #E03A45;
 }
 
 @font-face {
@@ -156,4 +158,60 @@ ul.sidebar-links-list {
     grid-template-columns: repeat(4, 40px);
     place-content: end;
     list-style: none;
+}
+
+/* Main container styling */
+.dashboard-total-item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.component-title-wrap {
+    grid-column: span 3 / span 3;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 0.4rem;
+    padding-inline: 0.8rem;
+}
+
+.component-total-result {
+    grid-row: span 2 / span 2;
+    grid-row-start: 2;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    margin-inline-start: 0.6rem;
+    margin-block-end: 1rem;
+}
+
+.component-total-result .span-percentage-result {
+    font-size: 0.9rem;
+}
+
+.component-total-result .span-fiat-result {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.component-img-wrap {
+    grid-column: span 2 / span 2;
+    grid-row-start: 2;
+    grid-row: span 2 / span 2;
+}
+
+.component-img-wrap img {
+    width: 100%;
+}
+
+.span-profit {
+    color: var(--color-profit);
+}
+
+.span-loss {
+    color: var(--color-loss);
 }
