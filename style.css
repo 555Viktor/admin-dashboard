@@ -28,7 +28,7 @@ body {
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(8, 1fr);
 
-    margin: 0.8rem;
+    margin: 0.9rem;
     gap: 12px;
 
     color: var(--dark-mode-text);
@@ -253,6 +253,8 @@ span.total-percent {
 .outlay-title-wrap {
     grid-column: span 3 / span 3;
     font-size: 1.1rem;
+    padding-block: 0.2rem;
+    padding-inline: 0.8rem;
 }
 
 .month-selection-wrap {
@@ -317,4 +319,27 @@ span.total-percent {
 .span-selected-month i {
     color: var(--color-selected-month);
     font-size: 0.5rem;
+}
+
+/* Latest transactions component */
+
+.user-latest-transactions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    padding-bottom: 0.8rem;
+}
+
+.user-latest-transactions .component-title-wrap,
+.field-transaction-wrap {
+    padding-block: 0.2rem;
+    padding-inline: 0.8rem;
+}
+
+.field-transaction-wrap {
+    font-size: 0.8rem;
+
+    display: flex;
+    justify-content: space-between;
 }
