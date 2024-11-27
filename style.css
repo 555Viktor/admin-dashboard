@@ -4,6 +4,8 @@
     --dark-mode-text: #DBDFEA;
     --color-profit: #34E4B5;
     --color-loss : #E03A45;
+    --color-selected-month: #E03A45;
+    --color-prev-month: #894BA9;
 }
 
 @font-face {
@@ -240,16 +242,25 @@ span.total-percent {
 .user-outlay-graph {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+
+    padding-block: 1rem;
+    padding-inline: 1.5rem;
+
+    font-size: 0.8rem;
 }
 
 .outlay-title-wrap {
     grid-column: span 3 / span 3;
+    font-size: 1.1rem;
 }
 
 .month-selection-wrap {
     grid-column: span 3 / span 3;
     grid-column-start: 4;
+
+    display: flex;
+    justify-content: space-between;
 }
 
 .outlay-fiat-range {
@@ -282,4 +293,15 @@ span.total-percent {
 
     display: flex;
     justify-content: space-between;
+}
+
+.span-prev-month i {
+    color: var(--color-prev-month);
+    font-size: 0.5rem;
+
+}
+
+.span-selected-month i {
+    color: var(--color-selected-month);
+    font-size: 0.5rem;
 }
