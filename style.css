@@ -28,7 +28,7 @@ body {
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(8, 1fr);
 
-    margin: 0.5rem;
+    margin: 0.8rem;
     gap: 12px;
 
     color: var(--dark-mode-text);
@@ -241,8 +241,8 @@ span.total-percent {
 /* Outlay Graph Component */
 .user-outlay-graph {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: 20px, repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr), 20px;
 
     padding-block: 1rem;
     padding-inline: 1.5rem;
@@ -261,6 +261,19 @@ span.total-percent {
 
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
+}
+
+.month-selection-wrap .input-outlay-month {
+    border: none;
+    outline: none;
+
+    background: var(--dark-mode-body);
+    color: var(--dark-mode-text);
+
+    height: 50%;
+    padding: 1rem;
+    border-radius: 2rem;
 }
 
 .outlay-fiat-range {
