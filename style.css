@@ -25,6 +25,8 @@ body {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(8, 1fr);
+
+    margin: 0.5rem;
     gap: 12px;
 
     color: var(--dark-mode-text);
@@ -227,5 +229,57 @@ ul.sidebar-links-list {
 }
 
 .card-img-wrap img{
-    width: 92%;
+    width: 90%;
+}
+
+span.total-percent {
+    font-size: 0.88rem;
+}
+
+/* Outlay Graph Component */
+.user-outlay-graph {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.outlay-title-wrap {
+    grid-column: span 3 / span 3;
+}
+
+.month-selection-wrap {
+    grid-column: span 3 / span 3;
+    grid-column-start: 4;
+}
+
+.outlay-fiat-range {
+    grid-row: span 4 / span 4;
+    grid-row-start: 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.outlay-img-wrap {
+    grid-column: span 5 / span 5;
+    grid-row: span 4 / span 4;
+    grid-row-start: 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.outlay-img-wrap img {
+    width: 100%;
+}
+
+.outlay-graph-indicators {
+    grid-column: span 5 / span 5;
+    grid-column-start: 2;
+    grid-row-start: 6;
+
+    display: flex;
+    justify-content: space-between;
 }
