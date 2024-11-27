@@ -339,7 +339,15 @@ span.total-percent {
 
 .field-transaction-wrap {
     font-size: 0.8rem;
-
+    position: relative;
     display: flex;
     justify-content: space-between;
+}
+
+hr.divider {
+    width: 88%;
+    margin: 0 auto;
+    border: none; /* Remove default border */
+    height: 3.2px;  /* Set thickness */
+    background: var(--dark-mode-body);
 }
