@@ -124,6 +124,7 @@ ul.sidebar-links-list {
 
 .sidebar-links-list li {
     margin-inline-start: 1rem;
+    margin-top: 0.6rem;
     padding-block: 0.5rem;
     cursor: pointer;
 }
@@ -254,7 +255,6 @@ span.total-percent {
     grid-column: span 3 / span 3;
     font-size: 1.1rem;
     padding-block: 0.2rem;
-    padding-inline: 0.8rem;
 }
 
 .month-selection-wrap {
